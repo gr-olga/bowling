@@ -1,0 +1,47 @@
+.scoreboard_container {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  text-align: left;
+
+  thead {
+    background-color: #f8f8f8;
+
+    th {
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      td {
+        border: 1px solid #ddd;
+        text-align: center;
+
+        .pin {
+          padding: 2px;
+          border: 1px solid #007bff;
+          margin: 0 2px;
+        }
+
+        //&:first-child {
+        //  font-weight: bold;
+        //}
+        //
+        //&:nth-child(2n) {
+        //  background-color: #e9e9e9;
+        //}
+        //
+        //&:nth-child(2n+1) {
+        //  background-color: #f9f9f9;
+        //}
+      }
+    }
+  }
+}
